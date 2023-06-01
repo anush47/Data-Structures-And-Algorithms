@@ -100,7 +100,7 @@ int main() {
     }
 
     // Find the city/cities with the smallest average time
-    int minAvgTime = INT_MAX;
+    float minAvgTime = INT_MAX;
     vector<int> minAvgCities;
     cout<<"Average times:"<<endl;
     for (int i = 0; i < numCities; i++) {
