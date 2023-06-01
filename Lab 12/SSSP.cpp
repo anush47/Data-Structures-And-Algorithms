@@ -81,7 +81,7 @@ int main() {
     vector<int> time(numCities, 0);
 
     // Calculate the average time taken from each source city to the other cities
-    vector<int> avgTimes(numCities, 0);
+    vector<float> avgTimes(numCities, 0);
     for (int source = 0; source < numCities; source++) {
         // Output the shortest distances from the source city to all other cities
         cout << "Shortest times from City " << source << ":"<<endl;
@@ -96,7 +96,7 @@ int main() {
                 count++;
             }
         }
-        avgTimes[source] = sumTimes / count;
+        avgTimes[source] = sumTimes / (float)count;
     }
 
     // Find the city/cities with the smallest average time
