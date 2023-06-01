@@ -102,6 +102,11 @@ int main() {
     // Find the city/cities with the smallest average time
     int minAvgTime = INT_MAX;
     vector<int> minAvgCities;
+    cout<<"Average times:"<<endl;
+    for (int i = 0; i < numCities; i++) {
+        cout<<"City "<<i<<" - "<<avgTimes[i]<<endl;
+    }
+    cout<<endl;
     for (int i = 0; i < numCities; i++) {
         if (avgTimes[i] < minAvgTime) {
             minAvgTime = avgTimes[i];
@@ -113,7 +118,7 @@ int main() {
     }
 
     // Output the city/cities with the smallest average time
-    cout <<endl<< "City/Cities with the smallest average time ("<<minAvgTime<<"):\n";
+    cout <<endl<< "City/Cities with the smallest average time ("<<minAvgTime<<"):"<<endl;
     for (int city : minAvgCities) {
         cout << "City " << city << endl;
     }
